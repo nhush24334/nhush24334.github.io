@@ -1,9 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 26px;
+            margin-top: 10px;
+        }
+        a {
+            font-size: 18px;
+            color: #b4861a;
+            transition: 0.5s;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        a:hover {
+            color: rgb(187, 0, 0);
+            text-decoration: underline;
+        }
+        .main {
+            border:2px solid black;
+            border-radius: 10px;
+            box-sizing: border-box;
+            max-width: 800px;
+            margin: 0 auto;
 
-    </body>
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 40px 20px;
+        }  
+        .D1, .D2 {
+            width: 100%;
+        } 
+    </style>
+</head>
+<body>
+    <h1>這是我們網站的首頁<br>以下超連結可以轉到我們的個人成果!</h1>
+    <div class="main">
+        <div class="D1">
+            <h2>-----這是南湖高中114班25號陳品軒的作品-----</h2>
+            <a href="https://nhush24334.github.io/test.html">陳品軒的個人成果點這裡!</a>
+        </div>
+        <div class="D2">
+            <h2>-----這是南湖高中102班34號鄭宇佐的作品-----</h2>
+            <a href="https://nhush24334.github.io/test.html">鄭宇佐的個人成果點這裡!</a>
+        </div>
+    </div>
+</body>
 </html>
