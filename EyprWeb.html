@@ -3,23 +3,36 @@
     <head>
         <style>
             body{
-                background-color: rgb(32, 32, 32);
+                background-color: rgb(0, 68, 77);
                 text-align: center;
                 align-content: center;
                 h1{
-                    background-color: rgba(198, 246, 255, 0.87);
-                    color: blueviolet;
+                    font-size: 75px;
+                    background-color: rgba(103, 168, 177, 0.87);
+                    color: rgb(251, 255, 12);
                     font-display:auto ;
-                    padding : flex flex flex flex;
-                    
+                    padding : flex flex auto;
+                    border-radius: 15px;
                 };
                 h2{
-                    color : rgb(150, 239, 255);
+                    color : rgb(255, 239, 8);
                     font-size: 50px;
                 }
                 p{
-                    color : rgb(150, 239, 255);
+                    color : rgb(244, 255, 149);
                 };
+                a{
+                    color : rgb(255, 248, 187);
+                }
+                a:hover{
+                    color : rgb(0, 121, 0);
+                }
+                a:visited{
+                    color: darkgoldenrod;
+                }
+            }
+            table{
+                border-radius: 15px;
             }
             img{
                 display: block;
@@ -28,7 +41,12 @@
                 padding: flex;
             }
             .Buttons{
-                background-color: rgb(255, 250, 187);
+                background-color: rgb(255, 247, 128);
+                border: none;
+                cursor: pointer;
+                border-width: 50px;
+                margin: 10px;
+                border-radius: 15px;
             }
             .Centre{
                 display: block;
@@ -37,31 +55,22 @@
 
             }
             .PageEnd{
-                background-color: rgb(0, 176, 183);
+                background-color: rgb(103, 168, 177, 0.87);
                 height: auto;
                 width: 100%;
-                tr{
-                    background-color:aqua ;
-                }
-                .tdL{
-                    width: 50%;
-                    color: brown;
-                    justify-content: rigt;
-                }
-                .tdR{
-                    width: 50%;
-                    display: flex;
-                    background-color: rgb(12, 200, 187);
-                    color: rgb(0, 75, 94);
-                    justify-content: left;
-                }
             }
         </style>
         <title>earlypaper_1's Page</title>
     </head>
     <body>
-        <h1>Hello! I'm earlypaper_1!</h1>
-        <P>I'm earlypaper_1!</P>
+        <h1>earlypaper_1's Website</h1>
+        <P>I'm earlypaper_1! this is the first website I made!</P>
+        <h2>About me</h2>
+        <P>Hi, I'm earlypaper_1! I am a high school student learning in Nanhu high school.<br>
+            I love to learn some cool stuff my self and do some coding. <br>
+            I've learn Java and Python in school, I also know how code in <a href = "https://create.roblox.com/docs/zh-tw/luau">LuaU</a>, which is used in <a href="https://www.roblox.com/">Roblox</a> studio to create your own game!<br>
+            Beside codings, I always play baseball during my free time.
+        </P>
         <h2>A game I made!</h2>
         
         <img src = "https://tr.rbxcdn.com/180DAY-953d3d211ea8c6b6d5c8816bc7d1d8a2/150/150/Image/Webp/noFilter" alt = "Game icon" class="Centre">
@@ -70,22 +79,9 @@
                 <button class = "Buttons">Press me to check it out!</button>
             </a>
         </p>
-        <table class="Centre">
-            <tr>
-                <td>C1</td>
-                <td>C2</td>
-            </tr>
-        </table>
-        <table class = "PageEnd">
-                <tr>
-                    <td>作者:鄭宇佐</td>
-                </tr>
-                <tr>
-                    <td>學號:24310234</td>
-                </tr>
-                <tr>
-                    <td>學校:台北市南湖高中</td>
-                </tr>
-        </table>
+        <div class="PageEnd">
+            <h3>作者:鄭宇佐<br>
+            學校:台北市立南湖高中</h3>
+        </div>
     </body>
 </html>
