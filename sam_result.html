@@ -3,54 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>陳品軒的成果</title>
+    <title>陳品軒的個人成果</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+            
+            background-color: #0f172a;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
         h2 {
-            font-size: 30px;
+            font-size: 26px;
+            font-weight: 800;
+            color: #f1f5f9;
+            margin-top: 45px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
         }
-        h1 {
-            font-size: 40;
-            background: rgb(197, 251, 255);
+        
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin: 0;
+        }
+
+        .title-box {
+            font-size: 36px;
+            font-weight: 800;
+            color: #0f172a;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            padding:20px;
+            background: linear-gradient(135deg, #c5fbff 0%, #b2f5fa 100%);
+            box-shadow: 0px 10px 25px -5px rgba(197, 251, 255, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border-radius: 16px;
+            margin-bottom: 30px;
+
+            /*標題上下置中*/
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: all 0.3s ease;
         }
-        h3 {
+
+        .title-box:hover {
+            box-shadow: 10px 20px 30px -10px rgba(56, 252, 255, 0.5);
+        }
+
+        .footer-box {
             font-size: 14px;
-            background: rgb(197, 251, 255);
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            padding: 12px;
-            margin-top: 25px;
+            font-weight: 600;
+            color: #334155;
+            background: linear-gradient(135deg, #c5fbff 0%, #b2f5fa 100%);
+            box-shadow: 0 10px 25px -5px rgba(197, 251, 255, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border-radius: 16px;
+            margin-top: 50px;
+            line-height: 1.8;
+
+            /*頁尾上下置中*/
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            transition: all 0.3s ease;
         }
+
+        .footer-box:hover{
+            box-shadow: 10px 20px 30px -10px rgba(56, 252, 255, 0.5);
+        }
+
+        ::selection {
+            background-color: rgb(120, 151, 223);
+            color: #0f172a;
+        }
+        
     </style>
 </head>
 <body>
-    <h1>陳品軒的網站</h1>
-    <div>
-        <div>
-            <h2>我的興趣:</h2>
-            <p>喜歡寫程式,也對益智遊戲有興趣,也熱愛運動</p>
+    <div class="container">
+        <div class="title-box">
+            陳品軒的網站
         </div>
+
         <div>
-            <h2>我的未來志向:</h2>
-            <p>我希望未來可以當程式設計師,雖然我覺得我的程式天分沒有那麼好<br> 
-                但我願意花時間研究程式,也更傾向自己找bug,不太用AI找bug</p>
+            <div>
+                <h2>我的興趣:</h2>
+                <p>喜歡寫程式,也對益智遊戲有興趣,也熱愛運動</p>
+            </div>
+            <div>
+                <h2>我的未來志向:</h2>
+                <p>我希望未來可以當程式設計師,雖然我覺得我的程式天分沒有那麼好<br> 
+                    但我願意花時間研究程式,也更傾向自己找bug,不太用AI找bug</p>
+            </div>
         </div>
-    </div>
-    <div>
-        <h2>製作這個網站的動機&學到的東西:</h3>
-        <p1>由於對程式的熱愛,還有完成自己小時候想寫一個網站的夢想<br>
-            所以我製作了這個網站,其中我學到了包含HTML的基礎<br>
-            其實看起來很簡單的東西,我都用了好久才弄懂,即使做了一個學期<br>
-            也可能只碰到HTML的皮毛而已,還有很長一段路要走</p1>
-    </div>
-    <div>
-        <h3>作者:陳品軒<br>
-        <p3>學校:南湖高中</p3></h3>
+
+        <div>
+            <h2>製作這個網站的動機&學到的東西:</h3>
+            <p>由於對程式的熱愛,還有完成自己小時候想寫一個網站的夢想<br>
+                所以我製作了這個網站,其中我學到了包含HTML的基礎<br>
+                其實看起來很簡單的東西,我都用了好久才弄懂,即使做了一個學期<br>
+                也可能只碰到HTML的皮毛而已,還有很長一段路要走</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>作者:陳品軒<br>
+            <p3>學校:南湖高中</p3></h3>
+        </div>
     </div>
 </body>
 </html>
