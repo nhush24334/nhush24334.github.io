@@ -6,7 +6,7 @@
     <title>陳品軒的個人成果</title>
     <style>
         html, body {
-            height: 100%;
+            min-height: 100%;
             margin: 0;
             padding: 0;
         }
@@ -20,6 +20,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            box-sizing: border-box;
+            padding: 20px 0;
         }
 
         .container {
@@ -49,7 +52,6 @@
             font-size: 36px;
             font-weight: 800;
             color: #0f172a;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
             background: linear-gradient(135deg, #c5fbff 0%, #b2f5fa 100%);
             box-shadow: 0px 10px 25px -5px rgba(197, 251, 255, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
             border-radius: 16px;
@@ -112,13 +114,19 @@
 
         @media (max-width: 480px) {
             .title-box {
-                font-size: 24px;
-                height: auto;
-                min-height: 90px;
-                padding: 15px 10px;
+                font-size: 24px !important;
+                height: auto !important;
+                min-height: 90px in !important;
+
+                padding: 30px 15px !important;
             }
+
+            .title-box span {
+                line-height: 1.4 !important;
+            }
+
             .container {
-                padding: 20px 15px;
+                padding: 15px !important;
             }
         }
         
